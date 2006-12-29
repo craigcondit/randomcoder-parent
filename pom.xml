@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+	                    http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.randomcoder</groupId>
+  <artifactId>randomcoder-base</artifactId>
+  <name>Randomcoder Organizational Pom</name>
+  <version>1-SNAPSHOT</version>
+  <inceptionYear>2006</inceptionYear>
+  <organization>
+  	<name>Craig Condit</name>
+  	<url>http://randomcoder.com/</url>
+  </organization>
+  <url>http://randomcoder.com/</url>
+	<description>
+		This package contains the Randomcoder organizational settings.
+	</description>
+  <developers>
+  	<developer>
+  		<id>ccondit</id>
+  		<name>Craig Condit</name>
+  		<email>ccondit@randomcoder.com</email>
+  		<roles>
+  			<role>architect</role>
+  			<role>developer</role>
+  		</roles>
+  		<timezone>-7</timezone>
+  	</developer>
+  </developers>
+  <licenses>
+  	<license>
+  		<name>BSD style license</name>
+  		<url>LICENSE.txt</url>
+  		<distribution>repo</distribution>
+  	</license>
+  </licenses>
+  <ciManagement>
+  	<system>continuum</system>
+  	<url>https://randomcoder.com/continuum/</url>
+  	<notifiers>
+  		<notifier>
+  			<type>mail</type>
+  			<sendOnError>true</sendOnError>
+  			<sendOnFailure>true</sendOnFailure>
+  			<sendOnSuccess>false</sendOnSuccess>
+  			<sendOnWarning>false</sendOnWarning>
+  		</notifier>
+  	</notifiers>
+  </ciManagement>
+  <scm>
+  	<connection>scm:svn:http://randomcoder.com/repos/public/randomcoder-base/trunk</connection>
+  	<developerConnection>scm:svn:https://randomcoder.com/repos/public/randomcoder-base/trunk</developerConnection>
+  	<url>http://randomcoder.com/repos/public/randomcoder-base/trunk</url>
+  </scm>
+  <distributionManagement>
+  	<repository>
+  		<id>randomcoder-release-repository</id>
+  		<url>scpexe://strategichosts.com/home/maven/public_html/repository/release</url>  		
+  	</repository>
+  	<snapshotRepository>
+  		<id>randomcoder-snapshot-repository</id>
+  		<url>scpexe://strategichosts.com/home/maven/public_html/repository/snapshot</url>
+  	</snapshotRepository>
+  	<site>
+  		<id>randomcoder-site</id>
+  		<url>scpexe://strategichosts.com/home/maven/public_html/site/${project.artifactId}</url>
+  	</site>
+  </distributionManagement>
+
+
+</project>
