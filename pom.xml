@@ -100,7 +100,7 @@
   	</snapshotRepository>
   	<site>
   		<id>randomcoder-site</id>
-  		<url>scpexe://strategichosts.com/home/maven/public_html/site/${project.artifactId}</url>
+  		<url>scpexe://strategichosts.com/home/maven/public_html/site/</url>
   	</site>
   </distributionManagement>
 
