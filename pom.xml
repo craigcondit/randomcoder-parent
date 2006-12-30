@@ -8,7 +8,7 @@
   <artifactId>randomcoder-base</artifactId>
   <packaging>pom</packaging>
   <name>Randomcoder Organizational Pom</name>
-  <version>5</version>
+  <version>6</version>
   <inceptionYear>2006</inceptionYear>
   <organization>
   	<name>Craig Condit</name>
