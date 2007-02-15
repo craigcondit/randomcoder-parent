@@ -37,6 +37,10 @@
   		<distribution>repo</distribution>
   	</license>
   </licenses>
+  <issueManagement>
+  	<system>Mantis</system>
+  	<url>https://randomcoder.com/mantis/</url>
+  </issueManagement>
   <ciManagement>
   	<system>continuum</system>
   	<url>https://randomcoder.com/continuum/</url>
