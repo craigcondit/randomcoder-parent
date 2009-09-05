@@ -1,11 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                      http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.randomcoder</groupId>
   <artifactId>randomcoder-base</artifactId>
   <packaging>pom</packaging>
   <name>Randomcoder Organizational Pom</name>
-  <version>8</version>
+  <version>9-SNAPSHOT</version>
   <inceptionYear>2006</inceptionYear>
   <organization>
   	<name>Craig Condit</name>
@@ -52,9 +52,9 @@
   	</notifiers>
   </ciManagement>
   <scm>
-  	<connection>scm:svn:http://randomcoder.com/repos/public/randomcoder-base/tags/8</connection>
-  	<developerConnection>scm:svn:https://randomcoder.com/repos/public/randomcoder-base/tags/8</developerConnection>
-  	<url>http://randomcoder.com/repos/public/randomcoder-base/tags/8</url>
+  	<connection>scm:svn:http://randomcoder.com/repos/public/randomcoder-base/trunk</connection>
+  	<developerConnection>scm:svn:https://randomcoder.com/repos/public/randomcoder-base/trunk</developerConnection>
+  	<url>http://randomcoder.com/repos/public/randomcoder-base/trunk</url>
   </scm>
   <repositories>
     <repository>
