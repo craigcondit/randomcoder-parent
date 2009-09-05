@@ -5,7 +5,7 @@
   <artifactId>randomcoder-base</artifactId>
   <packaging>pom</packaging>
   <name>Randomcoder Organizational Pom</name>
-  <version>9-SNAPSHOT</version>
+  <version>8-SNAPSHOT</version>
   <inceptionYear>2006</inceptionYear>
   <organization>
   	<name>Craig Condit</name>
@@ -88,15 +88,15 @@
   <distributionManagement>
   	<repository>
   		<id>randomcoder-release-repository</id>
-  		<url>scpexe://strategichosts.com/home/maven/public_html/repository/release</url>  		
+  		<url>scpexe://sy.ndro.me/home/maven/public_html/repository/release</url>  		
   	</repository>
   	<snapshotRepository>
   		<id>randomcoder-snapshot-repository</id>
-  		<url>scpexe://strategichosts.com/home/maven/public_html/repository/snapshot</url>
+  		<url>scpexe://sy.ndro.me/home/maven/public_html/repository/snapshot</url>
   	</snapshotRepository>
   	<site>
   		<id>randomcoder-site</id>
-  		<url>scpexe://strategichosts.com/home/maven/public_html/site/</url>
+  		<url>scpexe://sy.ndro.me/home/maven/public_html/site/</url>
   	</site>
   </distributionManagement>
 
