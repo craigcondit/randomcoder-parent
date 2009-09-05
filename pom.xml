@@ -8,7 +8,7 @@
   <artifactId>randomcoder-base</artifactId>
   <packaging>pom</packaging>
   <name>Randomcoder Organizational Pom</name>
-  <version>7</version>
+  <version>8-SNAPSHOT</version>
   <inceptionYear>2006</inceptionYear>
   <organization>
   	<name>Craig Condit</name>
@@ -83,14 +83,9 @@
       <url>http://randomcoder.com/maven/repository/snapshot</url>
     </repository>
 		<repository>
-	  	<id>java.net</id>
-	  	<url>https://maven-repository.dev.java.net/nonav/repository</url>
-	  	<layout>legacy</layout>
-		</repository>
-		<repository>
 			<id>maven2-repository.dev.java.net</id>
 			<name>Java.net Repository for Maven</name>
-			<url>https://maven2-repository.dev.java.net/nonav/repository</url>
+			<url>http://download.java.net/maven/2/</url>
 		</repository>
   </repositories>
   <distributionManagement>
