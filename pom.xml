@@ -96,7 +96,7 @@
   	</snapshotRepository>
   	<site>
   		<id>randomcoder-site</id>
-  		<url>scpexe://sy.ndro.me/srv/maven/public_html/site/</url>
+  		<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/site/</url>
   	</site>
   </distributionManagement>
 
