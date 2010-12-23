@@ -88,11 +88,11 @@
   <distributionManagement>
   	<repository>
   		<id>randomcoder-release-repository</id>
-  		<url>scpexe://sy.ndro.me/srv/maven/public_html/repository/release</url>  		
+  		<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/repository/release</url>  		
   	</repository>
   	<snapshotRepository>
   		<id>randomcoder-snapshot-repository</id>
-  		<url>scpexe://sy.ndro.me/srv/maven/public_html/repository/snapshot</url>
+  		<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/repository/snapshot</url>
   	</snapshotRepository>
   	<site>
   		<id>randomcoder-site</id>
