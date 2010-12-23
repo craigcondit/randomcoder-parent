@@ -5,7 +5,7 @@
   <artifactId>randomcoder-base</artifactId>
   <packaging>pom</packaging>
   <name>Randomcoder Organizational Pom</name>
-  <version>11-SNAPSHOT</version>
+  <version>11</version>
   <inceptionYear>2006</inceptionYear>
   <organization>
   	<name>Craig Condit</name>
@@ -52,9 +52,9 @@
   	</notifiers>
   </ciManagement>
   <scm>
-  	<connection>scm:svn:http://randomcoder.org/repos/public/randomcoder-base/trunk</connection>
-  	<developerConnection>scm:svn:https://randomcoder.org/repos/public/randomcoder-base/trunk</developerConnection>
-  	<url>http://randomcoder.org/repos/public/randomcoder-base/trunk</url>
+  	<connection>scm:svn:http://randomcoder.org/repos/public/randomcoder-base/tags/11</connection>
+  	<developerConnection>scm:svn:https://randomcoder.org/repos/public/randomcoder-base/tags/11</developerConnection>
+  	<url>http://randomcoder.org/repos/public/randomcoder-base/tags/11</url>
   </scm>
   <repositories>
     <repository>
