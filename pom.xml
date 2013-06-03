@@ -63,7 +63,7 @@
 		</snapshotRepository>
 		<site>
 			<id>randomcoder-site</id>
-			<url>dav:https://randomcoder.org/nexus/content/sites/site/${project.groupId}/${project.artifactId}/${project.version}</url>
+			<url>dav:https://randomcoder.org/nexus/content/sites/site/${project.groupId}/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
 	<build>
