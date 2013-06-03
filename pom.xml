@@ -68,9 +68,11 @@
 	</distributionManagement>
 	<build>
 		<extensions>
-			<groupId>org.apache.maven.wagon</groupId>
-			<artifactId>wagon-webdav-jackrabbit</artifactId>
-			<version>2.4</version>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>2.4</version>
+			<extension>
 		</extensions>
 		<plugins>
 			<plugin>
