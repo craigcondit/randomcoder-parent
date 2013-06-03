@@ -50,7 +50,7 @@
 	<scm>
 		<connection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</connection>
 		<developerConnection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</developerConnection>
-		<url>https://randomcoder.org/scm/git/randomcoder-base</url>
+		<url>https://randomcoder.org/gitlist/randomcoder-base</url>
 	</scm>
 	<distributionManagement>
 		<repository>
