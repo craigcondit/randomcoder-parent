@@ -1,103 +1,70 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.randomcoder</groupId>
-  <artifactId>randomcoder-base</artifactId>
-  <packaging>pom</packaging>
-  <name>Randomcoder Organizational Pom</name>
-  <version>12-SNAPSHOT</version>
-  <inceptionYear>2006</inceptionYear>
-  <organization>
-  	<name>Craig Condit</name>
-  	<url>http://randomcoder.org/</url>
-  </organization>
-  <url>http://randomcoder.org/</url>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.randomcoder</groupId>
+	<artifactId>randomcoder-base</artifactId>
+	<packaging>pom</packaging>
+	<name>Randomcoder Organizational Pom</name>
+	<version>12-SNAPSHOT</version>
+	<inceptionYear>2006</inceptionYear>
+	<organization>
+		<name>Craig Condit</name>
+		<url>http://randomcoder.org/</url>
+	</organization>
+	<url>http://randomcoder.org/</url>
 	<description>
 		This package contains the Randomcoder organizational settings.
 	</description>
-  <developers>
-  	<developer>
-  		<id>ccondit</id>
-  		<name>Craig Condit</name>
-  		<email>ccondit@randomcoder.org</email>
-  		<roles>
-  			<role>architect</role>
-  			<role>developer</role>
-  		</roles>
-  		<timezone>-7</timezone>
-  	</developer>
-  </developers>
-  <licenses>
-  	<license>
-  		<name>BSD style license</name>
-  		<url>LICENSE.txt</url>
-  		<distribution>repo</distribution>
-  	</license>
-  </licenses>
-  <issueManagement>
-  	<system>Mantis</system>
-  	<url>https://randomcoder.org/mantis/</url>
-  </issueManagement>
-  <ciManagement>
-  	<system>continuum</system>
-  	<url>https://randomcoder.org/continuum/</url>
-  	<notifiers>
-  		<notifier>
-  			<type>mail</type>
-  			<sendOnError>true</sendOnError>
-  			<sendOnFailure>true</sendOnFailure>
-  			<sendOnSuccess>false</sendOnSuccess>
-  			<sendOnWarning>false</sendOnWarning>
-  		</notifier>
-  	</notifiers>
-  </ciManagement>
-  <scm>
-  	<connection>scm:svn:http://randomcoder.org/repos/public/randomcoder-base/trunk</connection>
-  	<developerConnection>scm:svn:https://randomcoder.org/repos/public/randomcoder-base/trunk</developerConnection>
-  	<url>http://randomcoder.org/repos/public/randomcoder-base/trunk</url>
-  </scm>
-  <repositories>
-    <repository>
-      <releases>
-      	<enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>randomcoder-release</id>
-      <name>Randomcoder Release</name>
-      <url>http://randomcoder.org/maven/repository/release</url>
-    </repository>
-    <repository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-      	<enabled>true</enabled>
-      </snapshots>
-      <id>randomcoder-snapshot</id>
-      <name>Randomcoder Snapshot</name>
-      <url>http://randomcoder.org/maven/repository/snapshot</url>
-    </repository>
+	<developers>
+		<developer>
+			<id>ccondit</id>
+			<name>Craig Condit</name>
+			<email>ccondit@randomcoder.org</email>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-7</timezone>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>BSD style license</name>
+			<url>LICENSE.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<ciManagement>
+		<system>jenkins</system>
+		<url>https://randomcoder.org/jenkins/</url>
+		<notifiers>
+			<notifier>
+				<type>mail</type>
+				<sendOnError>true</sendOnError>
+				<sendOnFailure>true</sendOnFailure>
+				<sendOnSuccess>false</sendOnSuccess>
+				<sendOnWarning>false</sendOnWarning>
+			</notifier>
+		</notifiers>
+	</ciManagement>
+	<scm>
+		<connection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</connection>
+		<developerConnection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</developerConnection>
+		<url>https://randomcoder.org/scm/git/randomcoder-base</url>
+	</scm>
+	<distributionManagement>
 		<repository>
-			<id>maven2-repository.dev.java.net</id>
-			<name>Java.net Repository for Maven</name>
-			<url>http://download.java.net/maven/2/</url>
+			<id>randomcoder-release-repository</id>
+			<url>https://randomcoder.org/nexus/content/repositories/releases</url>
 		</repository>
-  </repositories>
-  <distributionManagement>
-  	<repository>
-  		<id>randomcoder-release-repository</id>
-  		<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/repository/release</url>  		
-  	</repository>
-  	<snapshotRepository>
-  		<id>randomcoder-snapshot-repository</id>
-  		<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/repository/snapshot</url>
-  	</snapshotRepository>
-  	<site>
-  		<id>randomcoder-site</id>
-  		<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/site/</url>
-  	</site>
-  </distributionManagement>
+		<snapshotRepository>
+			<id>randomcoder-snapshot-repository</id>
+			<url>https://randomcoder.org/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<site>
+			<id>randomcoder-site</id>
+			<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/site/</url>
+		</site>
+	</distributionManagement>
 
 </project>
