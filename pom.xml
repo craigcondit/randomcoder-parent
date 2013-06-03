@@ -63,7 +63,7 @@
 		</snapshotRepository>
 		<site>
 			<id>randomcoder-site</id>
-			<url>scpexe://maven@sy.ndro.me/srv/maven/public_html/site/</url>
+			<url>https://randomcoder.org/nexus/content/sites/randomcoder-site/</url>
 		</site>
 	</distributionManagement>
 
