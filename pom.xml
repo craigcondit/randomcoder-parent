@@ -54,7 +54,7 @@
 		</snapshotRepository>
 		<site>
 			<id>randomcoder-site</id>
-			<url>dav:https://nexus.randomcoder.org/content/sites/site/${project.groupId}/${project.artifactId}</url>
+			<url>dav:https://nexus.randomcoder.org/content/sites/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
 	<build>
