@@ -41,7 +41,7 @@
 	<scm>
 		<connection>scm:git:https://scm.randomcoder.org/git/randomcoder-base</connection>
 		<developerConnection>scm:git:https://scm.randomcoder.org/git/randomcoder-base</developerConnection>
-		<url>http://gitlist.randomcoder.org/randomcoder-base</url>
+		<url>https://randomcoder.org/cgit/public/randomcoder-base</url>
 	</scm>
 	<distributionManagement>
 		<repository>
@@ -57,6 +57,9 @@
 			<url>dav:https://nexus.randomcoder.org/content/sites/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<build>
 		<extensions>
 			<extension>
@@ -75,4 +78,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+		</plugins>
+	</reporting>
 </project>
