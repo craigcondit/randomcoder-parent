@@ -36,7 +36,7 @@
 	</licenses>
 	<ciManagement>
 		<system>jenkins</system>
-		<url>https://jenkins.randomcoder.org/</url>
+		<url>https://randomcoder.org/jenkins/</url>
 	</ciManagement>
 	<scm>
 		<connection>scm:git:https://scm.randomcoder.org/git/randomcoder-base</connection>
