@@ -39,26 +39,27 @@
 		<url>https://randomcoder.org/jenkins/</url>
 	</ciManagement>
 	<scm>
-		<connection>scm:git:https://scm.randomcoder.org/git/randomcoder-base</connection>
-		<developerConnection>scm:git:https://scm.randomcoder.org/git/randomcoder-base</developerConnection>
+		<connection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</connection>
+		<developerConnection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</developerConnection>
 		<url>https://randomcoder.org/cgit/public/randomcoder-base</url>
 	</scm>
 	<distributionManagement>
 		<repository>
 			<id>randomcoder-release-repository</id>
-			<url>https://randomcoder.org/nexus/content/repositories/releases</url>
+			<url>https://${repository.host}/nexus/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>randomcoder-snapshot-repository</id>
-			<url>https://randomcoder.org/nexus/content/repositories/snapshots</url>
+			<url>https://${repository.host}/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<site>
 			<id>randomcoder-site</id>
-			<url>dav:https://randomcoder.org/nexus/content/sites/${project.artifactId}</url>
+			<url>dav:https://${repository.host}/nexus/content/sites/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<repository.host>randomcoder.org</repository.host>
 	</properties>
 	<build>
 		<extensions>
