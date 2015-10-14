@@ -34,69 +34,92 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	<ciManagement>
-		<system>jenkins</system>
-		<url>https://randomcoder.org/jenkins/</url>
-	</ciManagement>
 	<scm>
-		<connection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</connection>
-		<developerConnection>scm:git:https://randomcoder.org/scm/git/randomcoder-base</developerConnection>
-		<url>https://randomcoder.org/cgit/public/randomcoder-base</url>
+		<connection>scm:git:https://github.com/insideo/randomcoder-base.git</connection>
+		<developerConnection>scm:git:git@github.com:insideo/randomcoder-base.git</developerConnection>
+		<url>https://github.com/insideo/randomcoder-base</url>
 	</scm>
 	<distributionManagement>
 		<repository>
-			<id>randomcoder-release-repository</id>
-			<url>https://${repository.host}/nexus/content/repositories/releases</url>
+			<id>bintray-randomcoder-release</id>
+			<url>https://bintray.com/api/v1/maven/insideo/randomcoder-release/${project.artifactId}/;publish=1;override=1</url>
 		</repository>
 		<snapshotRepository>
-			<id>randomcoder-snapshot-repository</id>
-			<url>https://${repository.host}/nexus/content/repositories/snapshots</url>
+			<id>aws-randomcoder-maven-snapshots</id>
+			<url>s3://randomcoder-snapshots.mvn-repo.craigcondit.com/snapshot</url>
 		</snapshotRepository>
-		<site>
-			<id>randomcoder-site</id>
-			<url>dav:https://${repository.host}/nexus/content/sites/${project.artifactId}</url>
-		</site>
 	</distributionManagement>
+	<repositories>
+		<repository>
+			<id>bintray-randomcoder-release</id>
+			<url>http://dl.bintray.com/insideo/randomcoder-release</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>aws-randomcoder-maven-snapshots</id>
+			<url>s3://randomcoder-snapshots.mvn-repo.craigcondit.com/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<repository.host>randomcoder.org</repository.host>
+		<aws.maven.version>5.0.0.RELEASE</aws.maven.version>
+		<maven.javadoc.plugin.version>2.10.3</maven.javadoc.plugin.version>
+		<maven.deploy.plugin.version>2.8.2</maven.deploy.plugin.version>
+		<maven.source.plugin.version>2.4</maven.source.plugin.version>
+		<maven.release.plugin.version>2.5.2</maven.release.plugin.version>
 	</properties>
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>${maven.javadoc.plugin.version}</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven.deploy.plugin.version}</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>${maven.source.plugin.version}</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>${maven.release.plugin.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<extensions>
 			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-webdav-jackrabbit</artifactId>
-				<version>2.4</version>
+				<groupId>org.springframework.build</groupId>
+				<artifactId>aws-maven</artifactId>
+				<version>${aws.maven.version}</version>
 			</extension>
 		</extensions>
 		<plugins>
 			<plugin>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.3</version>
-				<configuration>
-					<relativizeDecorationLinks>false</relativizeDecorationLinks>
-				</configuration>
-			</plugin>
-			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.7</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>2.2.1</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
-	<reporting>
-		<plugins>
-			<plugin>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>2.7</version>
-			</plugin>
-		</plugins>
-	</reporting>
 </project>
