@@ -5,7 +5,7 @@
 	<artifactId>randomcoder-base</artifactId>
 	<packaging>pom</packaging>
 	<name>Randomcoder Organizational Pom</name>
-	<version>27</version>
+	<version>28-SNAPSHOT</version>
 	<inceptionYear>2006</inceptionYear>
 	<organization>
 		<name>Craig Condit</name>
@@ -38,7 +38,7 @@
 		<connection>scm:git:https://github.com/insideo/randomcoder-base.git</connection>
 		<developerConnection>scm:git:git@github.com:insideo/randomcoder-base.git</developerConnection>
 		<url>https://github.com/insideo/randomcoder-base</url>
-	  <tag>randomcoder-base-27</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<distributionManagement>
 		<repository>
