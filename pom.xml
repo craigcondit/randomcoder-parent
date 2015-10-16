@@ -5,7 +5,7 @@
   <artifactId>randomcoder-parent</artifactId>
   <packaging>pom</packaging>
   <name>Randomcoder Organizational Pom</name>
-  <version>1-SNAPSHOT</version>
+  <version>1</version>
   <inceptionYear>2006</inceptionYear>
   <organization>
     <name>Craig Condit</name>
@@ -38,7 +38,7 @@
     <connection>scm:git:https://github.com/insideo/randomcoder-parent.git</connection>
     <developerConnection>scm:git:git@github.com:insideo/randomcoder-parent.git</developerConnection>
     <url>https://github.com/insideo/randomcoder-parent</url>
-    <tag>HEAD</tag>
+    <tag>randomcoder-parent-1</tag>
   </scm>
   <distributionManagement>
     <repository>
