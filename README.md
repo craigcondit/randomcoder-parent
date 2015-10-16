@@ -1,4 +1,3 @@
-randomcoder-base
-================
-This is the base Randomcoder organizational POM. It contains settings common
-to all RandomCoder.org projects.
+randomcoder-parent
+==================
+This package contains the parent POM for randomcoder.org projects.

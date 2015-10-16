@@ -2,10 +2,10 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.randomcoder</groupId>
-  <artifactId>randomcoder-base</artifactId>
+  <artifactId>randomcoder-parent</artifactId>
   <packaging>pom</packaging>
   <name>Randomcoder Organizational Pom</name>
-  <version>29-SNAPSHOT</version>
+  <version>1-SNAPSHOT</version>
   <inceptionYear>2006</inceptionYear>
   <organization>
     <name>Craig Condit</name>
@@ -13,7 +13,7 @@
   </organization>
   <url>https://randomcoder.org/</url>
   <description>
-    This package contains the Randomcoder organizational settings.
+    This package contains the parent POM for randomcoder.org projects.
   </description>
   <developers>
     <developer>
@@ -35,9 +35,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:https://github.com/insideo/randomcoder-base.git</connection>
-    <developerConnection>scm:git:git@github.com:insideo/randomcoder-base.git</developerConnection>
-    <url>https://github.com/insideo/randomcoder-base</url>
+    <connection>scm:git:https://github.com/insideo/randomcoder-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:insideo/randomcoder-parent.git</developerConnection>
+    <url>https://github.com/insideo/randomcoder-parent</url>
     <tag>HEAD</tag>
   </scm>
   <distributionManagement>
