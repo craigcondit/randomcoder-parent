@@ -46,18 +46,6 @@
             <url>https://maven.pkg.github.com/craigcondit/randomcoder-parent</url>
         </repository>
     </distributionManagement>
-    <repositories>
-        <repository>
-            <id>github-randomcoder-parent</id>
-            <url>https://maven.pkg.github.com/craigcondit/randomcoder-parent</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.javadoc.plugin.version>3.3.2</maven.javadoc.plugin.version>
