@@ -43,49 +43,12 @@
         <url>https://github.com/insideo/randomcoder-parent</url>
         <tag>HEAD</tag>
     </scm>
-    <distributionManagement>
-        <repository>
-            <id>bintray-randomcoder-release</id>
-            <url>
-                https://bintray.com/api/v1/maven/insideo/randomcoder-release/${project.artifactId}/;publish=1;override=1
-            </url>
-        </repository>
-        <snapshotRepository>
-            <id>aws-randomcoder-maven-snapshots</id>
-            <url>s3://randomcoder-snapshots.mvn-repo.craigcondit.com/snapshot
-            </url>
-        </snapshotRepository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>bintray-randomcoder-release</id>
-            <url>https://dl.bintray.com/insideo/randomcoder-release</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>aws-randomcoder-maven-snapshots</id>
-            <url>s3://randomcoder-snapshots.mvn-repo.craigcondit.com/snapshot
-            </url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aws.maven.version>5.0.0.RELEASE</aws.maven.version>
-        <maven.javadoc.plugin.version>3.0.1</maven.javadoc.plugin.version>
-        <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-        <maven.source.plugin.version>3.0.1</maven.source.plugin.version>
-        <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
+        <maven.javadoc.plugin.version>3.3.2</maven.javadoc.plugin.version>
+        <maven.deploy.plugin.version>3.0.0-M2</maven.deploy.plugin.version>
+        <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
+        <maven.release.plugin.version>3.0.0-M5</maven.release.plugin.version>
     </properties>
     <build>
         <pluginManagement>
@@ -108,13 +71,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <extensions>
-            <extension>
-                <groupId>org.springframework.build</groupId>
-                <artifactId>aws-maven</artifactId>
-                <version>${aws.maven.version}</version>
-            </extension>
-        </extensions>
         <plugins>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
