@@ -42,7 +42,7 @@
     </scm>
     <distributionManagement>
         <repository>
-            <id>github</id>
+            <id>github-randomcoder-parent</id>
             <url>https://maven.pkg.github.com/craigcondit/randomcoder-parent</url>
         </repository>
     </distributionManagement>
